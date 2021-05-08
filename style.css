@@ -149,6 +149,23 @@ About Section
     color: rgb(255, 255, 255, 0.7);
 }
 
+.offer-items:hover{
+    background-color: #fff;
+    transition: 0.3s;
+    box-shadow: 0 5px 40px rgb(0, 0, 0, 0.05);
+}
+.offer-items:hover h3{
+    color: #383838;
+    transition: 0.3s;
+}
+.offer-items:hover p{
+    color: #969696;
+    transition: 0.3s;
+}
+
+
+
+
 
 
 .about .about-details{
