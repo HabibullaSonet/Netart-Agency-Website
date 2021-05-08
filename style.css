@@ -23,15 +23,32 @@ Reusable Elements
     border-radius: 4px;
     transition: 0.3s;
     cursor: pointer;
+    box-shadow: 0 15px 20px rgb(36, 36, 36, 0.1);
 }
 p{
     font-size: 16px;
-    line-height: 30px;
+    line-height: 28px;
 }
 h1{
     font-size: 45px;
     font-weight: 500;
     line-height: 50px;
+}
+h2{
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 53px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+h5{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #feb82c;
 }
 /*============
 Header Section
@@ -82,7 +99,6 @@ Header Section
 .header-btn{
     color: rgb(31, 193, 169);
     background: #fff;
-    box-shadow: 2px 6px 20px rgb(36, 36, 36, 0.1);
 }
 
 .header-btn:hover{
@@ -103,4 +119,79 @@ Header Section
 }
 .header-content .right-col-header img{
     width: 550px;
+}
+
+/*===========
+About Section
+===========*/
+.about{
+    height: 1080px;
+}
+.about .offers{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: -80px;
+}
+.offers .offer-items{
+    background-color: #5579FA;
+    margin-right: 10px;
+    padding: 40px 35px;
+}
+.offers .offer-items img{
+    width: 60px;
+    padding-bottom: 18px;
+}
+.offers .offer-items h3{
+    color: #fff;
+    padding-bottom: 15px;
+}
+.offers .offer-items p{
+    color: rgb(255, 255, 255, 0.7);
+}
+
+
+
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 130px;
+}
+.about-details .image{
+    flex-basis: 48%;
+    height: 500px;
+    width: 550px;
+    overflow: hidden;
+    border-radius: 50% 50% 0 50%;
+    /* margin-right: 25px; */
+}
+.about-details .image img{
+    height: 500px;
+    width: auto;
+    margin-left: -100px;
+}
+
+
+.about-details .details{
+    flex-basis: 48%;
+    /* margin-left: 25px; */
+}
+.about-details .details h5{
+    padding-top: 25px;
+    padding-bottom: 6px;
+}
+.about-details .details h2{
+    color: #383838;
+    padding-bottom: 25px;
+}
+.about-details .details p{
+    color: #969696;
+    padding-bottom: 20px;
+}
+.about-details .details .about-btn{
+    color: #fff;
+    background-color: rgb(31, 193, 169);
+}
+.about-details .details .about-btn:hover{
+    box-shadow: none;
 }
