@@ -191,7 +191,6 @@ About Section
 
 .about-details .details{
     flex-basis: 48%;
-    /* margin-left: 25px; */
 }
 .about-details .details h5{
     padding-top: 25px;
@@ -211,4 +210,47 @@ About Section
 }
 .about-details .details .about-btn:hover{
     box-shadow: none;
+}
+/*===================
+Project Count Section
+===================*/
+.projects-count{
+    height: 230px;
+    width: 100%;
+    background-color: #5776e7;
+    background-image: url('img/project-count.jpg');
+    background-position: center;
+    position: relative;
+
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: .85;
+    background: #5579fa;
+}
+.project-count-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-count-content div{
+    text-align: center;
+}
+.project-count-content div h1{
+    color: #fff;
+    font-size: 44px;
+    font-weight: 700;
+}
+.project-count-content div p{
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.projects-count .container{
+    padding-top: 80px;
 }
