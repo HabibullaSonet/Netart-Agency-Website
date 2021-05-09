@@ -28,6 +28,7 @@ Reusable Elements
 p{
     font-size: 16px;
     line-height: 28px;
+    color: #969696;
 }
 h1{
     font-size: 45px;
@@ -42,6 +43,12 @@ h2{
 h3{
     font-size: 20px;
     font-weight: 500;
+    
+}
+h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: #383838;
 }
 h5{
     font-size: 14px;
@@ -221,7 +228,6 @@ Project Count Section
     background-image: url('img/project-count.jpg');
     background-position: center;
     position: relative;
-
 }
 .overlay{
     position: absolute;
@@ -253,4 +259,66 @@ Project Count Section
 }
 .projects-count .container{
     padding-top: 80px;
+}
+
+/*=============
+Service Section
+=============*/
+
+.service{
+    height: 1100px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color: #F4F6FF;
+}
+.service h5{
+    padding-top: 120px;
+    padding-bottom: 8px;
+}
+.service h2{
+    color: #383838;
+    padding-bottom: 70px;
+}
+.all-services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+.all-services .small-section{
+    align-items: center;
+    justify-items: center;
+    background-color: #fff;
+    padding: 20px 30px 50px;
+}
+.all-services small-section:nth-child(4){
+    margin-right: 0;
+}
+.all-services div h4{
+    padding-bottom: 15px;
+}
+.icon-box{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(31, 193, 169);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px rgb(26, 156, 137);
+}
+.icon-box:hover{
+    background-color: #5579FA;
+    box-shadow: 0 5px #3654c2;
+    transition: 0.2s;
+}
+.icon-box img{
+    display: block;
+    left: 0;
+    top: 0;
+    transform: translate(50%, 50%);
+    height: 50px;
+    width: 50px;
 }
