@@ -115,6 +115,7 @@ Header Section
 .header-btn2{
     color: #fff;
     background: none;
+    box-shadow: none;
 }
 .header-play-icon{
     width: 8px;
@@ -338,7 +339,7 @@ Project Section
 .skills .skill-right{
     flex-basis: 20%;
 }
-.skills .skill-left p{
+.projects-percent .skills .skill-left p{
     font-size: 25px;
     line-height: 40px;
     padding-bottom: 20px;
@@ -421,3 +422,46 @@ Project Section
     color: #fff;
 }
 
+
+
+
+.image-gallery{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+}
+.img-gallery{
+    min-height: 200px;
+    width: auto;
+}
+.img-gallery .img{
+    height: 340px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.img-gallery .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-gallery .details{
+    padding-left: 20px;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgb(202, 202, 202, 0.5);
+    box-sizing: border-box;
+}
+.img-gallery .details:hover{
+    background-color: #E0D1FD;
+    transition: 0.3s;
+}
+
+.img-gallery .details h4{
+    padding-top: 20px;
+}
