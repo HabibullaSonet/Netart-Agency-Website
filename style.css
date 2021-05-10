@@ -145,6 +145,7 @@ About Section
     background-color: #5579FA;
     margin-right: 10px;
     padding: 40px 35px;
+    cursor: pointer;
 }
 .offers .offer-items img{
     width: 60px;
@@ -326,7 +327,7 @@ Service Section
 Project Section
 =============*/
 .projects-percent{
-    height: 1000px;
+    min-height: 1000px;
     margin-top: 100px;
 }
 .projects-percent .skills{
@@ -464,4 +465,115 @@ Project Section
 
 .img-gallery .details h4{
     padding-top: 20px;
+}
+
+/*==========
+Team Section
+==========*/
+
+.team{
+    height: 870px;
+    width: auto;
+    text-align: center;
+    background-color: #B088F9;
+}
+
+.team h5{
+    color: #fff;
+    padding-top: 120px;
+}
+.team h2{
+    color: #fff;
+    padding-top: 10px;
+}
+.members{
+    margin-top: 170px;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    justify-content: space-between;
+}
+.person{
+    background-color: #fff;
+    border-radius: 5px;
+}
+.person:hover{
+    background-color: #FEB82C;
+}
+.person:hover h4{
+    color: #fff;
+}
+.person:hover h5{
+    color: #fff;
+}
+
+.person:hover p{
+    color: #fff;
+}
+.person:hover .social-icons ul li{
+    background-color: #FECD6C;
+}
+
+.person h4{
+    margin-top: -90px;
+    font-size: 20px;
+}
+
+.person h5{
+    /* margin-top: -50px; */
+    color: rgb(31, 193, 169);
+    letter-spacing: 0;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+.person p{
+    padding: 10px 20px 44px 20px;
+}
+.person .social-icons{
+    /* margin-top: -50px; */
+}
+
+
+
+.person-image{
+    top: -100px;
+    display: flex;
+    height: 185px;
+    width: 185px;
+    margin: auto;
+    position: relative;
+    border: 7px solid #B088F9;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.person-image img{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    object-fit:cover;
+    object-position:top center;
+}
+
+.social-icons ul li{
+    height: 34px;
+    width: 34px;
+    display: inline-block;
+    list-style: none;
+    background-color: #B088F9;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+.social-icons ul li img{
+    height: 17px;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(50%, 50%);
 }
