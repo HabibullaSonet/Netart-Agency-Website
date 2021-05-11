@@ -532,10 +532,6 @@ Team Section
 .person p{
     padding: 10px 20px 44px 20px;
 }
-.person .social-icons{
-    /* margin-top: -50px; */
-}
-
 
 
 .person-image{
@@ -611,13 +607,15 @@ Price Section
 }
 .options .plan:hover{
     background-color: #ffffff;
-    box-shadow: 0 5px 40px -10px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px -10px rgb(0, 0, 0, .1);
     transition: 0.4s;
 }
 .options .plan:hover .price-btn{
+    transition: 0.4s;
     background-color: #FEB82C;
 }
 .options .plan:hover h5{
+    transition: 0.4s;
     color: #FEB82C;
 }
 .options .plan h5{
@@ -667,19 +665,19 @@ Price Section
     padding: 17px 32px;
     margin-top: 17px;
     margin-bottom: 40px;
-    box-shadow: 0 20px 40px rgb(0, 0, 0, 0.05);
+    box-shadow: 0 25px 30px -10px rgb(36, 36, 36, 0.1);
 }
 
 .options .plan .price-btn:hover{
     box-shadow: none;
-    background-color: #FEB82C;
+    transition: 0.2s;
 }
 
 
 
 .pricing .options .plan-selected{
     background-color: #ffffff;
-    box-shadow: 0 20px 40px rgb(0, 0, 0, 0.05);
+    box-shadow: 0 20px 40px -10px rgb(0, 0, 0, .1);
     transition: 0.3s;
 }
 .pricing .options .plan-selected .price-btn{
@@ -687,4 +685,91 @@ Price Section
 }
 .pricing .options .plan-selected h5{
     color: #FEB82C;
+}
+
+/*=================
+Testimonial Section
+=================*/
+
+.testimonial{
+    min-height: 735px;
+    background-color: #F4F6FF;
+    text-align: center;
+}
+.testimonial h5{
+    padding-top: 115px;
+    padding-bottom: 10px;
+}
+.testimonial h2{
+    margin-bottom: 95px;
+}
+.testimonial .testimonial-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: space-between;
+    text-align: left;
+    position: relative;
+}
+.testimonial .testimonial-box .comments{
+    background: #fff;
+    border-radius: 5px;
+    padding: 50px 30px 20px 30px;
+    position: relative;
+}
+.testimonial .testimonial-box .comments .quote-icon{
+    width: 18px;
+    background-color: #1fc1a9;
+    padding: 11px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -70px;
+}
+.testimonial .testimonial-box .comments .comments-each{
+    margin-top: -20px;
+    font-weight: 400;
+}
+.testimonial .testimonial-box .comments .client-img{
+    width: 80px;
+    border-radius: 50%;
+}
+.testimonial .testimonial-box .comments .client{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-between;
+    grid-gap: 20px;
+    margin-top: 25px;
+    align-items: center;
+}
+.testimonial .testimonial-box .comments .client h4{
+    color: #1fc1a9;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.testimonial .testimonial-box .comments .client p{
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+
+
+
+.testimonial .testimonial-box .selected{
+    background: #5579FA;
+    border-radius: 5px;
+    padding: 50px 30px 20px 30px;
+    position: relative;
+}
+.testimonial .testimonial-box .selected .quote-icon{
+    background-color: #fff;
+}
+.testimonial .testimonial-box .selected .comments-each{
+    color: #fff;
+}
+.testimonial .testimonial-box .selected .client h4{
+    color: #fff;
+}
+.testimonial .testimonial-box .selected .client p{
+    color: #fff;
 }
